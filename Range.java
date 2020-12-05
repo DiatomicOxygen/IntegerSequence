@@ -6,10 +6,11 @@ public class Range implements IntegerSequence{
   public Range(int start,  int end){
     this.start = start;
     this.end = end;
-    current = 0;
+    current = start;
   }
 
   public void reset(){
+    current = start;
   }
 
   public int length(){
