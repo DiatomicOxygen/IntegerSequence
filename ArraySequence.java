@@ -20,7 +20,7 @@ public class ArraySequence implements IntegerSequence{
   }
 
   public boolean hasNext() {
-    return true;
+    return currentIndex < data.length;
   }
 
   public int next() {
