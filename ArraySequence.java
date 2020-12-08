@@ -24,6 +24,10 @@ public class ArraySequence implements IntegerSequence{
   }
 
   public int next() {
-    return 0;
+    if (hasNext()) {
+      currentIndex ++;
+      return data[currentIndex-1];
+    }
+    throw new NoSuchElementException();
   }
 }
