@@ -16,7 +16,7 @@ public class ArraySequence implements IntegerSequence{
   }
 
   public int length() {
-    return 0;
+    return data.length;
   }
 
   public boolean hasNext() {
