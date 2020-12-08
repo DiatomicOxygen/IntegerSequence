@@ -30,4 +30,13 @@ public class ArraySequence implements IntegerSequence{
     }
     throw new NoSuchElementException();
   }
+
+  public ArraySequence(IntegerSequence otherseq) {
+    data = new int[otherseq.length()];
+    for (int i = 0; i < otherseq.length(); i ++) {
+      data[i] = otherseq.next();
+    }
+    otherseq.reset();
+    currentIndex = 0;
+  }
 }
